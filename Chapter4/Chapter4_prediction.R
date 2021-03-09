@@ -46,6 +46,7 @@ model <- lm(count_pred~count_0+count_1+count_2+count_3+count_4+count_5+period, p
 # 039: Model analysis
 summary(model)
 
+### *There will be some differences from the book due to randomized sampling of data set.
 
 # 049: Prediction
 new_data <- tibble(count_0=c(3,2),
@@ -57,6 +58,8 @@ new_data <- tibble(count_0=c(3,2),
        period=c(8,8))
 
 predict(model, new_data)
+
+
 
 
 rm(list=ls(all.names=TRUE))
