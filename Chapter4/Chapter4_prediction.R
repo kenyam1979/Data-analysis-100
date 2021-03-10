@@ -16,10 +16,10 @@ tmp <- use_log %>%
   group_by(customer_id, usemonth) %>% 
   summarize(n=n())
 
-###基準月データ
+### Cutoff date
 data <- tmp %>% filter(usemonth>="201810") %>% mutate(cutoff=usemonth, count='count_pred')
 months <- sort(unique(tmp$usemonth), decreasing=TRUE)
-###各月データ
+### Month of cutoff - 1
 for (i in 1:6) {
   cutoff=(months[i])
   for (j in 1:6) {

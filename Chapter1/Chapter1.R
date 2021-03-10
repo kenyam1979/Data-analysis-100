@@ -2,17 +2,17 @@ library(tidyverse)
 
 
 ## 001: Data loading
-customer_master <- read_csv("サンプルコード_20201021/1章/customer_master.csv", 
+customer_master <- read_csv("sample_code/1章/customer_master.csv", 
                             col_types = cols(registration_date = col_datetime(format = "%Y-%m-%d %H:%M:%S"), 
                                              birth = col_date(format = "%Y/%m/%d")))
-item_master <- read_csv("サンプルコード_20201021/1章/item_master.csv")
-transaction_1 <- read_csv("サンプルコード_20201021/1章/transaction_1.csv", 
+item_master <- read_csv("sample_code/1章/item_master.csv")
+transaction_1 <- read_csv("sample_code/1章/transaction_1.csv", 
                           col_types = cols(payment_date = col_datetime(format = "%Y-%m-%d %H:%M:%S")))
-transaction_2 <- read_csv("サンプルコード_20201021/1章/transaction_2.csv", 
+transaction_2 <- read_csv("sample_code/1章/transaction_2.csv", 
                           col_types = cols(payment_date = col_datetime(format = "%Y-%m-%d %H:%M:%S")))
-transaction_detail_1 <- read_csv("サンプルコード_20201021/1章/transaction_detail_1.csv", 
+transaction_detail_1 <- read_csv("sample_code/1章/transaction_detail_1.csv", 
                                  col_types = cols(detail_id = col_double()))
-transaction_detail_2 <- read_csv("サンプルコード_20201021/1章/transaction_detail_2.csv")
+transaction_detail_2 <- read_csv("sample_code/1章/transaction_detail_2.csv")
 
 
 ## 002: Union for multiple data sources

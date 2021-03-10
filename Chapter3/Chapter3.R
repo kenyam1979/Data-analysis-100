@@ -1,13 +1,13 @@
 library(tidyverse)
 
 ## 021: Data loading
-use_log <- read_csv("サンプルコード_20201021/3章/use_log.csv", 
+use_log <- read_csv("sample_code/3章/use_log.csv", 
                     col_types = cols(usedate = col_date(format = "%Y-%m-%d")))
-customer_master <- read_csv("サンプルコード_20201021/3章/customer_master.csv", 
+customer_master <- read_csv("sample_code/3章/customer_master.csv", 
                             col_types = cols(start_date = col_datetime(format = "%Y-%m-%d %H:%M:%S")))
 
-class_master <- read_csv("サンプルコード_20201021/3章/class_master.csv")
-campaign_master <- read_csv("サンプルコード_20201021/3章/campaign_master.csv")
+class_master <- read_csv("sample_code/3章/class_master.csv")
+campaign_master <- read_csv("sample_code/3章/campaign_master.csv")
 
 
 ## 022: Enrich customer data

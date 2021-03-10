@@ -1,9 +1,10 @@
 library(tidyverse)
+library(readxl)
 
 ## 011: Data loading
-uriage <- read_csv("サンプルコード_20201021/2章/uriage.csv", 
+uriage <- read_csv("sample_code/2章/uriage.csv", 
                    col_types = cols(purchase_date = col_datetime(format = "%Y-%m-%d %H:%M:%S")))
-kokyaku_daicho <- read_excel("サンプルコード_20201021/2章/kokyaku_daicho.xlsx")
+kokyaku_daicho <- read_excel("sample_code/2章/kokyaku_daicho.xlsx")
 
 
 ## 012: Data quick check
