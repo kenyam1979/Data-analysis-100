@@ -1,6 +1,6 @@
 # Overview
 
-The code here is R based re-write of exercises in a book "Practical data analysis with Python - 100 exercises (Python実践データ分析 100本ノック)". The book is entirely based on Python. 
+Code here are R based re-write of exercises in a book "Practical data analysis with Python - 100 exercises (Python実践データ分析 100本ノック)". 
 
 # Reference book
 https://www.shuwasystem.co.jp/book/9784798058757.html
